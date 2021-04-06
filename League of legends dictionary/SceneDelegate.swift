@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = MainView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -27,6 +27,52 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
+        }
+        
+        for character in championList {
+            
+            if character.position.contains(.jungle) {
+                
+                championListJ.append(character)
+                
+            }
+        }
+        
+        
+        for character in championList {
+            
+            if character.position.contains(.Top) {
+                
+                championListT.append(character)
+                
+            }
+        }
+        
+        for character in championList {
+            
+            if character.position.contains(.middle) {
+                
+                championListM.append(character)
+                
+            }
+        }
+        
+        for character in championList {
+            
+            if character.position.contains(.bottom) {
+                
+                championListB.append(character)
+                
+            }
+        }
+        
+        for character in championList {
+            
+            if character.position.contains(.support) {
+                
+                championListS.append(character)
+                
+            }
         }
     }
 
