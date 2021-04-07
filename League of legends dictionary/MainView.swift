@@ -37,10 +37,10 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
-     
+        Group {
         MainView()
-         
-        
+            ChampionStatView(champion: pantheon, role: .Top)
+        }
     }
 }
 

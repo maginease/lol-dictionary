@@ -50,6 +50,17 @@ struct Champion:Identifiable {
 //    var range:Double
 //    var MS:Int
     var imageName:String
+    var passiveImage:String
+    var QImage:String
+    var WImage:String
+    var EImage:String
+    var RImage:String
+    
+    var Pdesc:String
+    var Qdesc:String
+    var Wdesc:String
+    var Edesc:String
+    var Rdesc:String
     
    
 }
@@ -58,11 +69,15 @@ let stringPosition = ["Top","Bottom"]
 let allPositions:[Position] = [.Top,.bottom,.jungle,.middle,.support]
 
 
-let pantheon = Champion(name: "Pantheon", position: [.middle,.support,.Top],imageName:"Pantheon")
-let akali = Champion(name: "Akali", position: [.Top,.middle], imageName: "Akali")
-let galio = Champion(name: "Galio", position: [.middle,.support], imageName: "Galio")
-let yasuo = Champion(name: "Yasuo", position: [.Top,.middle,.bottom], imageName: "Yasuo")
-let xinzhao = Champion(name: "Xin Zhao", position: [.jungle], imageName: "XinZhao")
+let pantheon = Champion(name: "Pantheon", position: [.middle,.support,.Top],imageName:"Pantheon",passiveImage:"Pantheon_Passive",QImage:"PantheonQ",WImage:"PantheonW",EImage:"PantheonE",RImage:"PantheonR",Pdesc:pantheonP,Qdesc:pantheonQ,Wdesc:pantheonW,Edesc:pantheonE,Rdesc:pantheonR)
+
+let akali = Champion(name: "Akali", position: [.Top,.middle], imageName: "Akali",passiveImage:"Akali_P",QImage:"AkaliQ",WImage:"AkaliW",EImage:"AkaliE",RImage:"AkaliR",Pdesc:akaliP,Qdesc:akaliQ,Wdesc:akaliW,Edesc:akaliE,Rdesc:akaliR)
+
+let galio = Champion(name: "Galio", position: [.middle,.support], imageName: "Galio",passiveImage:"Galio_Passive",QImage:"GalioQ",WImage:"GalioW",EImage:"GalioE",RImage:"GalioR",Pdesc:"",Qdesc:"",Wdesc:"",Edesc:"",Rdesc:"")
+
+let yasuo = Champion(name: "Yasuo", position: [.Top,.middle,.bottom], imageName: "Yasuo",passiveImage:"Yasuo_Passive",QImage:"YasuoQ",WImage:"YasuoW",EImage:"YasuoE",RImage:"YasuoR",Pdesc:"",Qdesc:"",Wdesc:"",Edesc:"",Rdesc:"")
+
+let xinzhao = Champion(name: "Xin Zhao", position: [.jungle], imageName: "XinZhao",passiveImage:"XinZhaoP",QImage:"XinZhaoQ",WImage:"XinZhaoW",EImage:"XinZhaoE",RImage:"XinZhaoR",Pdesc:"",Qdesc:"",Wdesc:"",Edesc:"",Rdesc:"")
 
 let championList:[Champion] = [pantheon,akali,galio,yasuo,xinzhao]
 
@@ -71,3 +86,4 @@ var championListB:[Champion] = []
 var championListS:[Champion] = []
 var championListJ:[Champion] = []
 var championListM:[Champion] = []
+

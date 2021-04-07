@@ -1,11 +1,13 @@
 {
   "images" : [
     {
+      "filename" : "LOL icon-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "LOL icon-2.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
@@ -31,6 +33,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "LOL icon.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
@@ -71,6 +74,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "LOL icon-4.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
@@ -81,11 +85,13 @@
       "size" : "76x76"
     },
     {
+      "filename" : "LOL icon-5.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "LOL icon-3.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

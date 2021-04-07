@@ -19,7 +19,7 @@ struct TopView:View {
             
         List(championListT) { character in
            
-            NavigationLink(destination:Text("\(character.name)")) {
+            NavigationLink(destination:ChampionStatView(champion: character, role: .Top)) {
            
             HStack {
             
@@ -50,7 +50,7 @@ struct BottomView:View {
             
         List(championListB) { character in
            
-            NavigationLink(destination:Text("\(character.name)")) {
+            NavigationLink(destination:ChampionStatView(champion: character, role: .bottom)) {
            
             HStack {
             
@@ -81,7 +81,7 @@ struct MiddleView:View {
             
         List(championListM) { character in
            
-            NavigationLink(destination:Text("\(character.name)")) {
+            NavigationLink(destination:ChampionStatView(champion: character, role: .middle)) {
            
             HStack {
             
@@ -112,7 +112,7 @@ struct JungleView:View {
             
         List(championListJ) { character in
            
-            NavigationLink(destination:Text("\(character.name)")) {
+            NavigationLink(destination:ChampionStatView(champion: character, role: .jungle)) {
            
             HStack {
             
@@ -143,7 +143,7 @@ struct SupportView:View {
             
         List(championListS) { character in
            
-            NavigationLink(destination:Text("\(character.name)")) {
+            NavigationLink(destination:ChampionStatView(champion: character, role: .support)) {
            
             HStack {
             
